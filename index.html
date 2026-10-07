@@ -1,51 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - HVAC Tracker</title>
+    <title>HVAC Tracker</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
-        h1 { color: #2C2D31; border-bottom: 2px solid #EFA751; padding-bottom: 10px; }
-        h2 { color: #EFA751; margin-top: 30px; }
-        p { margin-bottom: 15px; }
-        .update-date { color: #666; font-style: italic; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf9f2;
+            color: #2C2D31;
+        }
+        header {
+            background-color: #2C2D31;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .logo-container {
+            width: 120px;
+            height: 120px;
+            background-color: #EFA751;
+            border-radius: 25px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-container svg {
+            width: 70px;
+            height: 70px;
+        }
+        h1 { margin: 0 0 10px; font-size: 2.5rem; }
+        .subtitle { color: #A0A0A0; font-size: 1.2rem; margin-top: 0; }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid #EFA751;
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #2C2D31;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+        .links a {
+            color: #EFA751;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy</h1>
-    <p class="update-date">Last updated: September 26, 2026</p>
+    <header>
+        <div class="logo-container">
+            <svg viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Спрощений контур логотипа для вебу -->
+                <path d="M32 72V42L54 32V72Z" stroke="#2C2D31" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M66 34C72 30 78 34 78 40C78 46 72 48 68 44C64 40 66 36 70 36C72 36 74 38 73 40" stroke="#2C2D31" stroke-width="4" stroke-linecap="round"/>
+                <path d="M26 66L44 52L56 60L76 38" stroke="#2C2D31" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <h1>HVAC Tracker</h1>
+        <p class="subtitle">Професійний інструмент для обліку об'єктів та фінансів</p>
+    </header>
 
-    <p>Thank you for choosing to use HVAC Tracker ("the App"). Your privacy is important to us. This Privacy Policy explains how we handle, collect, and protect your information when you use our mobile application.</p>
+    <div class="container">
+        <h2>Можливості застосунку</h2>
 
-    <h2>1. Data Collection and Local Storage</h2>
-    <p>HVAC Tracker is designed to function primarily as an offline tool. All of your personal and business data—including objects, clients, work logs, financial records, notes, and photos—is <strong>stored locally on your device</strong>. The Developer does not have access to your local database, does not collect this information, and does not transmit it to any third-party servers.</p>
+        <div class="feature-card">
+            <h3>🏢 Управління об'єктами</h3>
+            <p>Ведіть облік усіх ваших будівельних та інженерних об'єктів в одному місці. Відслідковуйте стадії виконання робіт: від проектування до сервісного обслуговування.</p>
+        </div>
 
-    <h2>2. Google Drive Sync and Cloud Storage</h2>
-    <p>To provide cross-device synchronization and secure backups, the App offers an optional cloud sync feature using your personal Google Drive account.</p>
-    <p>If you choose to enable this feature, the App will request access to your Google Account. <strong>HVAC Tracker's use and transfer of information received from Google APIs to any other app will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.</strong></p>
-    <ul>
-        <li><strong>Restricted Scope:</strong> The App requests the <code>https://www.googleapis.com/auth/drive.appdata</code> scope. This grants the App access <em>only</em> to a hidden, application-specific folder in your Google Drive. The App cannot see, read, modify, or delete any of your personal files or documents stored elsewhere in your Google Drive.</li>
-        <li><strong>Data Ownership:</strong> Your synced data remains entirely under your control and counts against your personal Google Drive storage quota. The Developer has zero access to your Google Drive account or the encrypted backups stored within it.</li>
-    </ul>
+        <div class="feature-card">
+            <h3>💰 Фінансовий контроль</h3>
+            <p>Контролюйте оплати, залишки по договорах та вираховуйте свій реальний дохід за квадратний метр. Уся фінансова аналітика на зручному дашборді.</p>
+        </div>
 
-    <h2>3. Third-Party Services and Analytics</h2>
-    <p>The App does not use any third-party analytics trackers, crash reporting tools (such as Firebase Crashlytics), or advertising networks. We do not track your usage behavior or monetize your data in any way.</p>
+        <div class="feature-card">
+            <h3>⏱ Трекінг часу</h3>
+            <p>Вбудований таймер дозволяє точно фіксувати години, витрачені на кожну задачу. Оцінюйте ефективність своєї роботи.</p>
+        </div>
 
-    <h2>4. App Permissions</h2>
-    <p>The App may request the following permissions on your device to function correctly:</p>
-    <ul>
-        <li><strong>Camera and Storage:</strong> To attach photos and documents to your work logs.</li>
-        <li><strong>Notifications:</strong> To remind you of upcoming deadlines and daily work logs.</li>
-        <li><strong>Biometrics:</strong> To secure the App with your fingerprint or face scan (this biometric data never leaves your device's secure hardware).</li>
-    </ul>
+        <div class="feature-card">
+            <h3>🔒 Безпека та Синхронізація</h3>
+            <p>Ваші дані належать лише вам. Локальна база даних, вхід за біометрією (відбиток пальця/Face ID) та безпечне резервне копіювання на ваш особистий Google Drive.</p>
+        </div>
+    </div>
 
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top.</p>
-
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at: <strong>ua.hvac.designer@gmail.com</strong>.</p>
+    <div class="footer">
+        <div class="links">
+            <a href="privacy_policy.html">Політика конфіденційності (Privacy Policy)</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9em;">&copy; 2026 HVAC Tracker. Developed by HVAC Designer.</p>
+    </div>
 
 </body>
 </html>
